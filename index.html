@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Văn phòng vay vốn Kim Phát – Tư vấn tài chính uy tín</title>
+  <meta name="description" content="Văn phòng vay vốn Kim Phát – Tư vấn & hỗ trợ vay vốn ngân hàng nhanh chóng, minh bạch. Phục vụ Bình Dương & khu vực lân cận. Gọi ngay 0973 747 314."/>
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .glass { background: rgba(255,255,255,.7); backdrop-filter: blur(10px); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+    .transition-fast { transition: all .3s ease; }
+    .scale-100 { transform: scale(1); }
+    .scale-95 { transform: scale(.95); }
+    .opacity-0 { opacity:0; }
+    .opacity-100 { opacity:1; }
+    .animate-pulseShake { animation: pulseShake 1.2s infinite; }
+    @keyframes pulseShake {
+      0%,100%{ transform: scale(1); }
+      50%{ transform: scale(1.1) rotate(-2deg); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-white text-slate-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-amber-500 grid place-items-center text-white font-bold">KP</div>
+        <div>
+          <p class="font-bold text-slate-900">Văn phòng vay vốn Kim Phát</p>
+          <p class="text-xs text-slate-500">Tư vấn tài chính minh bạch – nhanh chóng</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#dichvu" class="hover:text-amber-600">Dịch vụ</a>
+        <a href="#uudiem" class="hover:text-amber-600">Ưu điểm</a>
+        <a href="#quytrinh" class="hover:text-amber-600">Quy trình</a>
+        <a href="#khuvuc" class="hover:text-amber-600">Khu vực phục vụ</a>
+        <a href="#lienhe" class="hover:text-amber-600">Liên hệ</a>
+      </nav>
+      <div class="flex gap-2">
+        <a href="tel:0973747314" class="px-4 py-2 rounded-2xl bg-amber-600 text-white font-semibold hover:bg-amber-700 shadow-soft">Gọi ngay</a>
+        <a href="https://zalo.me/0973747314" target="_blank" class="px-4 py-2 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-black shadow-soft">Chat Zalo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(251,191,36,0.12),transparent_60%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
+          Tư vấn & hỗ trợ <span class="text-amber-600">vay vốn ngân hàng</span>
+          <br/>Nhanh chóng • Minh bạch • Tận tâm
+        </h1>
+        <p class="mt-4 text-slate-600 text-lg">Kim Phát đồng hành xử lý hồ sơ, tối ưu lãi suất và thời gian giải ngân. Phục vụ Bình Dương & khu vực lân cận.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#lienhe" class="px-5 py-3 rounded-2xl bg-amber-600 text-white font-semibold hover:bg-amber-700 shadow-soft">Nhận tư vấn miễn phí</a>
+          <a href="tel:0973747314" class="px-5 py-3 rounded-2xl border border-slate-300 font-semibold hover:border-slate-400">Gọi 0973 747 314</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-slate-500">
+          <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Tư vấn trong ngày</div>
+          <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Bảo mật thông tin</div>
+          <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Không thu phí trước</div>
+        </div>
+      </div>
+      <div class="glass rounded-3xl p-6 md:p-8 shadow-soft border border-slate-100">
+        <h3 class="text-xl font-bold mb-4">Đăng ký tư vấn nhanh</h3>
+        <form class="grid gap-4" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="text-sm text-slate-600">Họ và tên</label>
+            <input type="text" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Nguyễn Văn A"/>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Số điện thoại</label>
+            <input type="tel" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="098x xxx xxx"/>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Nhu cầu</label>
+            <select class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <option>Vay tiêu dùng</option>
+              <option>Vay kinh doanh</option>
+              <option>Mua xe / Mua nhà</option>
+              <option>Đáo hạn / Tái cấu trúc</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Ghi chú</label>
+            <textarea rows="3" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Thu nhập, hồ sơ hiện có…"></textarea>
+          </div>
+          <button class="mt-2 px-5 py-3 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-black shadow-soft" type="submit">Gửi yêu cầu</button>
+          <p id="msg" class="hidden text-sm text-emerald-600">Đã ghi nhận yêu cầu. Kim Phát sẽ liên hệ sớm!</p>
+          <p class="text-xs text-slate-500">*Bằng việc gửi thông tin, bạn đồng ý với chính sách bảo mật của Kim Phát. Chúng tôi không thu phí trước khi giải ngân.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="dichvu" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Dịch vụ của Kim Phát</h2>
+      <p class="mt-2 text-slate-600">Tư vấn các gói vay phù hợp hồ sơ, tối ưu lãi suất & thời gian.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-bold text-lg">Vay tiêu dùng</h3>
+          <p class="mt-2 text-slate-600">Không tài sản đảm bảo, thủ tục nhanh, linh hoạt theo thu nhập.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-bold text-lg">Vay kinh doanh</h3>
+          <p class="mt-2 text-slate-600">Hỗ trợ vốn lưu động, bổ sung hàng hóa, mở rộng cơ sở.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-bold text-lg">Tái cấu trúc khoản vay</h3>
+          <p class="mt-2 text-slate-600">Tư vấn tất toán, đáo hạn, hợp nhất nợ để giảm áp lực trả nợ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="uudiem" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Vì sao chọn Kim Phát?</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <p class="font-bold">Minh bạch – Không phí ẩn</p>
+          <p class="mt-2 text-slate-600">Bảng phí rõ ràng, chỉ thu khi dịch vụ hoàn tất theo thỏa thuận.</p>
+        </div>
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <p class="font-bold">Xử lý nhanh hồ sơ</p>
+          <p class="mt-2 text-slate-600">Tư vấn ngành nghề, thu nhập & CIC để chọn ngân hàng phù hợp.</p>
+        </div>
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <p class="font-bold">Bảo mật thông tin</p>
+          <p class="mt-2 text-slate-600">Tuyệt đối không chia sẻ dữ liệu cho bên thứ ba khi chưa có phép.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="quytrinh" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Quy trình làm việc</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <p class="text-sm text-slate-500">Bước 1</p>
+          <p class="font-bold">Gặp trực tiếp tại văn phòng</p>
+          <p class="mt-2 text-slate-600">Khách hàng được tư vấn trực tiếp, khảo sát hồ sơ và nhu cầu vay.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <p class="text-sm text-slate-500">Bước 2</p>
+          <p class="font-bold">Tư vấn phương án</p>
+          <p class="mt-2 text-slate-600">Đề xuất ngân hàng & hạn mức phù hợp với nhu cầu khách hàng.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <p class="text-sm text-slate-500">Bước 3</p>
+          <p class="font-bold">Hỗ trợ hồ sơ</p>
+          <p class="mt-2 text-slate-600">Soạn giấy tờ, theo dõi thẩm định, hỗ trợ chuẩn bị tài liệu.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft">
+          <p class="text-sm text-slate-500">Bước 4</p>
+          <p class="font-bold">Giải ngân & hậu mãi</p>
+          <p class="mt-2 text-slate-600">Đồng hành sau giải ngân, hỗ trợ các vấn đề phát sinh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section id="khuvuc" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Khu vực phục vụ</h2>
+      <p class="mt-2 text-slate-600">Không yêu cầu khách đến văn phòng – Tuy nhiên có thể hẹn gặp trực tiếp theo nhu cầu.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span class="px-4 py-2 rounded-2xl bg-slate-100 border border-slate-200">Bình Dương – Thuận An</span>
+        <span class="px-4 py-2 rounded-2xl bg-slate-100 border border-slate-200">Bình Dương – Dĩ An</span>
+        <span class="px-4 py-2 rounded-2xl bg-slate-100 border border-slate-200">Bình Dương – Thủ Dầu Một</span>
+        <span class="px-4 py-2 rounded-2xl bg-slate-100 border border-slate-200">TP.Hồ Chí Minh</span>
+        <span class="px-4 py-2 rounded-2xl bg-slate-100 border border-slate-200">Đồng Nai</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Câu hỏi thường gặp</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="font-semibold cursor-pointer">Kim Phát có phải ngân hàng không?</summary>
+          <p class="mt-2 text-slate-600">Không. Kim Phát là đơn vị tư vấn tài chính độc lập, hỗ trợ khách hàng làm việc với ngân hàng phù hợp. Không thu phí trước.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="font-semibold cursor-pointer">Bao lâu thì được tư vấn & phản hồi?</summary>
+          <p class="mt-2 text-slate-600">Trong giờ làm việc, chúng tôi phản hồi trong vòng 60 phút sau khi nhận yêu cầu.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="font-semibold cursor-pointer">Thông tin của tôi có được bảo mật không?</summary>
+          <p class="mt-2 text-slate-600">Chúng tôi cam kết bảo mật và chỉ sử dụng thông tin để phục vụ mục đích tư vấn.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="font-semibold cursor-pointer">Có hỗ trợ khách nợ xấu/CIC?</summary>
+          <p class="mt-2 text-slate-600">Chúng tôi tư vấn phương án phù hợp theo từng trường hợp cụ thể, tùy chính sách của ngân hàng.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="lienhe" class="py-16 md:py-20 bg-amber-50">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Liên hệ Kim Phát ngay</h2>
+        <p class="mt-4 text-slate-600">Gọi trực tiếp hoặc gửi thông tin để được tư vấn nhanh chóng, phù hợp hồ sơ và nhu cầu.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="tel:0973747314" class="px-5 py-3 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-black shadow-soft">Gọi 0973 747 314</a>
+          <a href="https://zalo.me/0973747314" target="_blank" class="px-5 py-3 rounded-2xl bg-amber-600 text-white font-semibold hover:bg-amber-700 shadow-soft">Chat Zalo</a>
+        </div>
+      </div>
+      <div class="glass rounded-3xl p-6 md:p-8 shadow-soft border border-slate-100">
+        <form class="grid gap-4" onsubmit="handleSubmit(event)">
+          <div>
+            <label class="text-sm text-slate-600">Họ và tên</label>
+            <input type="text" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Nguyễn Văn A"/>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Số điện thoại</label>
+            <input type="tel" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="098x xxx xxx"/>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Nhu cầu</label>
+            <select class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <option>Vay tiêu dùng</option>
+              <option>Vay kinh doanh</option>
+              <option>Mua xe / Mua nhà</option>
+              <option>Đáo hạn / Tái cấu trúc</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm text-slate-600">Ghi chú</label>
+            <textarea rows="3" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Thu nhập, hồ sơ hiện có…"></textarea>
+          </div>
+          <button class="mt-2 px-5 py-3 rounded-2xl bg-slate-900 text-white font-semibold hover:bg-black shadow-soft" type="submit">Gửi yêu cầu</button>
+          <p id="msg2" class="hidden text-sm text-emerald-600">Đã ghi nhận yêu cầu. Kim Phát sẽ liên hệ sớm!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-bold text-lg">Văn phòng vay vốn Kim Phát</h3>
+        <p class="mt-2 text-sm text-slate-300">Tư vấn & hỗ trợ vay vốn nhanh chóng – minh bạch. Bình Dương & khu vực lân cận.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">Liên hệ</h3>
+        <p class="mt-2 text-sm text-slate-300">📞 0973 747 314</p>
+        <p class="mt-1 text-sm text-slate-300">💬 Zalo: 0973 747 314</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg">Địa chỉ</h3>
+        <p class="mt-2 text-sm text-slate-300">Bình Dương – Việt Nam</p>
+      </div>
+    </div>
+    <p class="text-center text-sm text-slate-500 mt-6">© 2025 Kim Phát. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      document.getElementById('msg').classList.remove('hidden');
+      document.getElementById('msg2').classList.remove('hidden');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
